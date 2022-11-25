@@ -57,6 +57,11 @@ textarea {
   color: white;
 }
 
+.icon{
+  display: inline-flex;
+  font-size: 1.25em;
+}
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
