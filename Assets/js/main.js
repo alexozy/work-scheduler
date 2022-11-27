@@ -6,13 +6,14 @@ setInterval (function () {
 }, 1000)
 
 var currentTime = moment().hour();
+console.log(currentTime);
 
 
 // cycling through the colors past present future:
 //we can use the .split to target the id hour
-setInterval($(".description").each(function(){
-    // var textHour = $(this).attr("id");
-    var textHour = ($(this).prop ('id'));
+$(".description").each(function(){
+    var textHour = $(this).parent().attr("id");
+    console.log(textHour);
     // we need a lessthan; equalTo; and else
     if( textHour < currentTime){
         $(this).find(".description").addClass(".past");
@@ -22,7 +23,7 @@ setInterval($(".description").each(function(){
     } else {
         $(this).find(".description").addClass(".future");
     }
-}))
+})
 
 // Local Storage:
 // .each controls content inside () ; we are in charge of content in {}
