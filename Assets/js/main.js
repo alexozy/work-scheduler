@@ -29,3 +29,12 @@ $(".saveBtn").each(function (i, btn) {
     localStorage.setItem(key,value)
   })
 });
+
+// loop through all textareas
+
+$(".saveBtn").each(function (i, btn) {
+ var key = $(btn).parent().attr("id");
+ var value = localStorage.getItem(key);
+ var textArea= $(this).siblings(".description");
+ textArea.val(value);
+});
