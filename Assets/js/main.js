@@ -11,19 +11,27 @@ console.log(currentTime);
 
 // cycling through the colors past present future:
 //we can use the .split to target the id hour
-$(".description").each(function(){
-    var textHour = $(this).parent().attr("id");
-    console.log(textHour);
+function colorBlocks() {
+  var goTime = moment().hour();
+  $(".time-block").each(function () {
+    // var textHour = $(this).parent().attr("id");
+    var textHour = $(this).attr("id");
+    console.log(textHour, goTime);
+
     // we need a lessthan; equalTo; and else
-    if( textHour < currentTime){
-        $(this).find(".description").addClass(".past");
-    } else if(textHour === currentTime){
-        $(this).find(".description").addClass(".present");
-        // default to future
+
+    if (textHour < goTime) {
+      $(this).addClass("past");
+      $(this).removeClass("future");
+      $(this).removeClass("present");
+    } else if (textHour === goTime) {
+      $(this).find(".description").addClass("present");
+      // default to future
     } else {
-        $(this).find(".description").addClass(".future");
+      $(this).find(".description").addClass("future");
     }
-})
+  });
+}
 
 // Local Storage:
 // .each controls content inside () ; we are in charge of content in {}
