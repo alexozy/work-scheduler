@@ -19,7 +19,7 @@ function colorBlocks() {
     console.log(textHour, goTime);
 
     // we need a lessthan; equalTo; and else
-debugger
+
     if (textHour < goTime) {
       $(this).find(".description").addClass("past");
     } else if (textHour === goTime) {

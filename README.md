@@ -7,15 +7,13 @@ We were tasked with creating a Scheduler that would allow storing user input int
 ## Application Mock-Up
 The following animation demonstrates functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+![Still image of live application Work Day Scheduler.](./Assets/images/_Users_ozyalex_gt-bootcamp_homework_work-scheduler_index.html.png)
 
 ### Live Application Link
 
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
+* This [link](https://alexozy.github.io/work-scheduler/) connects you to the live application.
 
 ## Contact Information
 
-If you would like to contact me please reach out to me at 
+If you would like to contact me please reach out to me at [alexanoz@outlook.com](alexanoz@outlook.com).
  
