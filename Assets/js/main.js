@@ -30,8 +30,9 @@ function colorBlocks() {
     } else {
       $(this).find(".description").addClass("future");
     }
-  });
+  }); 
 }
+
 
 // Local Storage:
 // .each controls content inside () ; we are in charge of content in {}
@@ -51,6 +52,8 @@ $(".saveBtn").each(function (i, btn) {
     var textArea= $(this).siblings(".description");
     textArea.val(value);
 });
+
+colorBlocks()
 
 // how to clear local browser when tab is closed:
 
